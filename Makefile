@@ -31,3 +31,6 @@ set_role_mappings:
 
 export_aws_auth:
 	kubectl get configmap aws-auth -n kube-system  -o yaml > aws_auth.yaml
+	
+contextpath:
+       kubectl config get-contexts
